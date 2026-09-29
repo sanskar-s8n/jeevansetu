@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: jeevansetu-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: jeevansetu
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - jeevansetu_pgdata:/var/lib/postgresql/data
+volumes:
+  jeevansetu_pgdata:

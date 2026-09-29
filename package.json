@@ -1,0 +1,6 @@
+{
+  "name":"jeevansetu-platform",
+  "private":true,
+  "version":"1.0.0",
+  "scripts":{"frontend":"npm --prefix frontend run dev","backend":"npm --prefix backend run dev","frontend:build":"npm --prefix frontend run build"}
+}
