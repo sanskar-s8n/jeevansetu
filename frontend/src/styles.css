@@ -3,3 +3,24 @@
 @media(max-width:1100px){.nav-links{gap:18px}.nav-inner,.hero-inner,.benefits-strip,.page-section,.footer-inner{padding-left:28px;padding-right:28px}.hero h1{font-size:40px}.hero-inner{grid-template-columns:1fr}.map-wrap{height:400px}.benefits-strip{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2){border-right:0}.workflow-grid{grid-template-columns:repeat(2,1fr);gap:28px}.step:nth-child(2):after{display:none}.step:nth-child(1):after{right:-17px}}
 @media(max-width:800px){.navbar{height:70px}.nav-inner{padding:0 18px}.brand-copy small{display:none}.brand-copy strong{font-size:21px}.nav-links{position:absolute;top:70px;left:0;right:0;height:auto;background:#fff;border-bottom:1px solid var(--line);display:none;flex-direction:column;align-items:stretch;padding:10px 18px;gap:0;box-shadow:0 15px 25px #18355212}.nav-links.open{display:flex}.nav-link{height:auto;text-align:left;padding:13px 4px}.nav-link.active:after{display:none}.language-wrap,.login-btn{display:none}.mobile-toggle{display:flex}.hero-inner{padding:34px 18px 28px}.hero h1{font-size:35px;letter-spacing:-1.3px}.hero p{font-size:14px}.hero-actions{grid-template-columns:1fr}.map-wrap{height:370px}.map-card{transform:scale(.9);transform-origin:center}.district{left:1%;top:27%}.specialist{right:-3%;top:4%}.rural{right:-5%;bottom:18%}.match-card{left:22%;width:250px}.benefits-strip{padding:15px 18px;grid-template-columns:1fr 1fr;gap:8px}.benefit{border-right:0;padding:8px 4px}.page-section{padding:25px 18px}.section-card{padding:27px 16px}.workflow-grid{grid-template-columns:1fr}.step:after{display:none!important}.split-card,.about-grid{grid-template-columns:1fr;padding:30px 22px;gap:25px}.contact-card{padding:30px 22px;display:block}.footer-inner{padding:22px 18px;display:grid;grid-template-columns:1fr 1fr}.footer-inner>p{grid-column:1/-1;margin:0}.footer-links{justify-content:flex-end;flex-wrap:wrap}.match-card ul{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.hero h1{font-size:30px}.map-wrap{height:330px}.map-card{min-width:190px;padding:8px;transform:scale(.78)}.district{left:-12%;top:25%}.specialist{right:-13%;top:2%}.rural{right:-17%;bottom:14%}.match-card{left:9%;bottom:1%;width:235px}.benefits-strip{grid-template-columns:1fr}.benefit{border-bottom:1px solid #edf2f5}.footer-inner{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.hero-actions{gap:10px}.feature-card{min-height:110px}}
+
+/* Backend-connected facility registry */
+.api-status { display:flex; align-items:center; gap:9px; margin:18px 0 14px; font-size:13px; }
+.api-dot { width:9px; height:9px; border-radius:50%; background:#22c55e; display:inline-block; box-shadow:0 0 0 4px rgba(34,197,94,.12); }
+.api-dot.loading { background:#f59e0b; box-shadow:0 0 0 4px rgba(245,158,11,.12); }
+.api-dot.error { background:#ef4444; box-shadow:0 0 0 4px rgba(239,68,68,.12); }
+.api-error { color:#b91c1c; font-size:13px; margin:0 0 14px; }
+.registry-section { padding-top:0; }
+.registry-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:28px; }
+.registry-card { border:1px solid #e6edf5; border-radius:18px; padding:20px; background:#fff; box-shadow:0 8px 24px rgba(20,45,80,.06); }
+.registry-card-head { display:flex; gap:13px; align-items:center; }
+.registry-card-head h3 { margin:0 0 5px; font-size:17px; }
+.registry-card-head span { display:flex; align-items:center; gap:4px; color:#718096; font-size:13px; }
+.registry-icon { width:44px; height:44px; display:grid; place-items:center; border-radius:13px; background:#eef7ff; color:#1683e8; }
+.registry-tags { display:flex; flex-wrap:wrap; gap:7px; margin:18px 0; }
+.registry-tags span { background:#f1f5f9; color:#475569; border-radius:999px; padding:6px 9px; font-size:11px; }
+.registry-meta { display:flex; justify-content:space-between; gap:10px; padding-top:14px; border-top:1px solid #edf2f7; color:#64748b; font-size:12px; }
+.registry-meta strong { color:#111827; font-size:16px; }
+.registry-state { margin-top:24px; padding:28px; text-align:center; border:1px dashed #cbd5e1; border-radius:16px; color:#64748b; }
+.registry-state.error { color:#b91c1c; background:#fff7f7; }
+@media (max-width:900px) { .registry-grid { grid-template-columns:1fr; } }
